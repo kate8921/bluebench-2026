@@ -2,7 +2,7 @@
 :root{color-scheme:dark;--bg:#07172f;--panel:#142a4c;--blue:#55b6ff;--muted:#c0cfe6}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:white;font:16px/1.55 system-ui,-apple-system,sans-serif}main{max-width:720px;margin:auto;padding:20px 15px 60px}h1{font-size:25px;margin:0}h2{font-size:18px;margin:0 0 10px}.muted{color:var(--muted)}.small{font-size:13px}.panel{background:var(--panel);border-radius:18px;padding:17px;margin:15px 0}input[type=search],select,button,a.btn{font:inherit;border-radius:11px;padding:12px;min-height:47px}input[type=search],select{width:100%;border:1px solid #617b9e;background:#fff;color:#13233b}button,a.btn{background:var(--blue);border:0;color:#061b34;font-weight:750;cursor:pointer;text-decoration:none;text-align:center}button:disabled{opacity:.5;cursor:not-allowed}.btn.secondary,button.secondary{background:#294a76;color:#fff}.btn{display:inline-block}.controls{display:flex;gap:9px;margin:12px 0}.controls>*{flex:1}.row{display:flex;align-items:center;gap:12px}.grow{flex:1}.number{background:#315a8f;min-width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-weight:800}.song{width:100%;background:#1e3a60;color:#fff;border:1px solid #45658a;text-align:left;margin:5px 0;display:flex;gap:10px;align-items:center}.song.active{outline:2px solid var(--blue)}.song .desc{font-size:12px;color:#c6d7ee;font-weight:400}.song .number{flex-shrink:0}.song .grow{min-width:0}.song strong{display:block}.pill{background:#37577d;color:#dcecff;font-size:11px;padding:3px 7px;border-radius:20px;white-space:nowrap}.pill.wait{background:#594e3c}#yt-container{aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;position:relative}#yt-player,#yt-container iframe{width:100%;height:100%;border:0}.hidden{display:none!important}.toggle{display:flex;align-items:center;gap:10px;margin:12px 0}.toggle input{width:21px;height:21px;accent-color:var(--blue)}.notice{border-left:3px solid var(--blue);padding-left:12px}.searchbar{display:flex;gap:8px;align-items:center}.searchbar input{flex:1;min-width:0}.searchbar select{width:auto}.status{min-height:1.5em}.section-title{display:flex;align-items:center;justify-content:space-between;gap:8px}.links{display:flex;gap:8px;flex-wrap:wrap}.links a{flex:1}.foot{font-size:12px;color:#b9c9e1}#loading{position:absolute;inset:0;display:grid;place-items:center;color:#aabbd3;pointer-events:none}a{color:#91d1ff}
 .inputrow{display:flex;gap:8px}.inputrow input{flex:1;min-width:0;background:white;color:#13233b;border:1px solid #617b9e;border-radius:10px;padding:10px;font:inherit}.inputrow button{flex-shrink:0}.hint{font-size:12px;color:#c0cfe6}.tabs{display:flex;gap:7px;flex-wrap:wrap}.tabs button{min-height:40px;padding:8px 12px;background:#294a76;color:white}.tabs button.active{background:#55b6ff;color:#061b34}button.danger{background:#56384a;color:white}#customName{width:100%;padding:12px;border-radius:10px;font:inherit}.lyricsbox{background:#0b1e3b;border:1px solid #45658a;border-radius:12px;padding:14px;margin:12px 0}.lyricsbox h2{font-size:17px;margin:0}.lyricsbox .section-title{margin-bottom:10px}.lyricsbox button{font-size:13px;padding:8px;min-height:40px}.lyricsText{white-space:pre-wrap;font-size:19px;line-height:1.9;overflow-wrap:anywhere;min-height:50px}ruby{ruby-position:over}rt{font-size:.55em;color:#c9e7ff;font-weight:500}.rubytools{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:10px 0}.rubytools button{min-height:38px}.rubytools label{display:flex;align-items:center;gap:7px}.rubytools input{width:20px;height:20px}.rubyhelp{font-size:12px;color:#c0cfe6}.lyricsbox textarea{width:100%;border-radius:10px;padding:12px;font:16px/1.6 system-ui;resize:vertical}.lyricsbox .links{margin-top:10px}.lyricsbox .links a{font-size:13px;padding:9px;min-height:40px}#playerSection{scroll-margin-top:8px}#bulkLyrics textarea{width:100%;border-radius:10px;padding:12px;font:16px/1.6 system-ui;background:white;color:#13233b}.sample{white-space:pre-wrap;background:#0b1e3b;border-radius:10px;padding:10px;font-size:13px} 
 </style></head><body><main>
-<h1>🐉 ドラゴンズ応援歌</h1><div class="muted small">Bluebench Player Ver.2.0 ｜ 登録データ共有対応</div>
+<h1>🐉 ドラゴンズ応援歌</h1><div class="muted small">Bluebench Player Ver.2.1 ｜ 登録データ共有対応</div>
 <section class="panel" id="featured"><h2>🌸 かわいいバージョンも聴く</h2><p class="small muted">選択中の選手の応援歌へ直接ジャンプします。2026年版に収録されていない曲ではボタンを無効にします。通常の練習は今までどおりアプリ内で再生できます。</p><a id="cuteLink" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true" style="display:block;text-align:center;background:#e88fc3;color:#1e1530;border-radius:14px;padding:15px;font-weight:800;text-decoration:none;font-size:18px">🌸 かわいいバージョンも聴く ↗</a><p class="hint" id="cuteInfo" aria-live="polite">選手を選ぶと、該当する曲の開始位置からYouTubeで開きます。</p><p class="hint">YouTubeアプリまたはブラウザで開きます。埋め込み再生の制限を回避するため、アプリ内では再生しません。</p></section>
 <section class="panel" id="playerSection"><h2>🎵 練習プレイヤー</h2><div id="current" class="muted">曲を選んでください</div><div class="lyricsbox"><div class="section-title"><h2>📝 応援歌の歌詞</h2><button id="editLyrics" class="secondary" type="button">歌詞を登録・編集</button></div><div class="rubytools"><label><input type="checkbox" id="rubyToggle">ふりがなを表示</label><button type="button" class="secondary" id="rubyEdit">読み方を修正</button></div><div id="rubyStatus" class="rubyhelp" role="status"></div><div id="rubyEditor" class="hidden"><p class="rubyhelp">修正したい漢字を <code>{漢字|かんじ}</code> の形式で囲んでください。ふりがなを付けない箇所はそのままでOK。修正はこの曲だけに保存されます。</p><textarea id="rubyInput" rows="5" style="width:100%;background:#fff;color:#13233b"></textarea><div class="controls"><button type="button" id="rubySave">読み方を保存</button><button type="button" class="secondary" id="rubyCancel">キャンセル</button></div></div><div id="lyricsText" class="lyricsText">歌詞を登録するとここに表示されます。</div><div id="lyricsEditor" class="hidden"><textarea id="lyricsInput" rows="5" placeholder="自分で用意した歌詞を貼り付けてください"></textarea><div class="controls"><button id="saveLyrics" type="button">保存</button><button id="cancelLyrics" class="secondary" type="button">キャンセル</button></div></div><div class="links"><a id="lyricsOfficial" target="_blank" rel="noopener noreferrer" href="https://chunichiouendan.wixsite.com/dragonsouendan/ouenka" class="btn secondary">公式歌詞ページ</a><a id="lyricsSearch" target="_blank" rel="noopener noreferrer" class="btn secondary">歌詞を検索</a></div><p class="hint">歌詞は端末に保存されます。共有ファイルを使うと別端末へ移せます。</p></div><label class="toggle"><input type="checkbox" id="repeat">この曲を繰り返す</label><div class="controls"><button id="play" disabled>▶ 再生</button><button id="pause" class="secondary" disabled>⏸ 一時停止</button></div><div id="yt-container"><div id="yt-player"></div><div id="loading">動画を準備しています…</div></div><p class="status small muted" id="status" role="status">プレイヤーを読み込み中です。</p><div class="links"><a class="btn secondary" id="youtube" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/">YouTubeで開く</a><a class="btn secondary" id="official" target="_blank" rel="noopener noreferrer" href="https://chunichiouendan.wixsite.com/dragonsouendan/%E5%BF%9C%E6%8F%B4%E6%AD%8C">公式応援歌一覧</a></div></section>
 <section class="panel"><div class="section-title"><h2>選手別応援歌</h2><span class="pill" id="count"></span></div><div class="searchbar"><input id="search" type="search" placeholder="背番号・選手名で検索" aria-label="選手を検索"><select id="filter" aria-label="絞り込み"><option value="all">全選手</option><option value="ready">再生可能</option><option value="pending">未登録</option></select></div><div id="songs"></div></section>
@@ -67,41 +67,65 @@ const songKey=s=>s.number+'|'+s.name;
 // Readings are generated locally in the browser. No lyric text is sent to a server.
 let rubySaved={};try{rubySaved=JSON.parse(localStorage.getItem('bluebench-v20-ruby')||'{}')||{}}catch(e){rubySaved={}}
 let rubyEnabled=localStorage.getItem('bluebench-v20-ruby-on')==='1';
-let tokenizer=null,tokenizerPromise=null,renderSerial=0;
-function loadTokenizer(){
- if(tokenizer)return Promise.resolve(tokenizer);
- if(tokenizerPromise)return tokenizerPromise;
- tokenizerPromise=new Promise((resolve,reject)=>{
-  const s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/build/kuromoji.js';
-  s.onload=()=>{if(!window.kuromoji){reject(Error('解析ライブラリが見つかりません'));return}
-   window.kuromoji.builder({dicPath:'https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/'}).build((err,t)=>err?reject(err):resolve(t))};
-  s.onerror=()=>reject(Error('読み方辞書を取得できません'));document.head.appendChild(s);
- }).then(t=>(tokenizer=t)).catch(e=>{tokenizerPromise=null;throw e});
- return tokenizerPromise;
+let renderSerial=0;
+let rubyWorker=null,rubyPending=new Map(),rubyRequestId=0;
+const rubyCache=new Map();
+function createRubyWorker(){
+ if(rubyWorker)return rubyWorker;
+ const workerCode=`
+ let tokenizer=null,loading=null;
+ function ensureTokenizer(){
+  if(tokenizer)return Promise.resolve(tokenizer);
+  if(loading)return loading;
+  loading=new Promise((resolve,reject)=>{
+   try{
+    importScripts('https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/build/kuromoji.js');
+    kuromoji.builder({dicPath:'https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/'}).build((err,t)=>err?reject(err):(tokenizer=t,resolve(t)));
+   }catch(e){reject(e)}
+  });return loading;
+ }
+ function hiragana(s){return s.replace(/[ァ-ヶ]/g,c=>String.fromCharCode(c.charCodeAt(0)-96))}
+ function annotate(text,t){return t.tokenize(text).map(token=>{
+  const surface=token.surface_form,reading=token.reading;
+  if(!/[一-龯々]/.test(surface)||!reading||reading==='*')return surface;
+  return '{'+surface+'|'+hiragana(reading)+'}';
+ }).join('')}
+ onmessage=async e=>{const {id,text}=e.data;try{const t=await ensureTokenizer();postMessage({id,result:annotate(text,t)})}catch(err){postMessage({id,error:String(err)})}};
+ `;
+ const url=URL.createObjectURL(new Blob([workerCode],{type:'text/javascript'}));
+ try{rubyWorker=new Worker(url)}finally{URL.revokeObjectURL(url)}
+ rubyWorker.onmessage=e=>{const {id,result,error}=e.data;const p=rubyPending.get(id);if(!p)return;clearTimeout(p.timer);rubyPending.delete(id);error?p.reject(Error(error)):p.resolve(result)};
+ rubyWorker.onerror=()=>stopRubyWorker('ふりがな辞書を読み込めませんでした');
+ return rubyWorker;
 }
-function hiragana(s){return s.replace(/[ァ-ヶ]/g,c=>String.fromCharCode(c.charCodeAt(0)-96))}
+function stopRubyWorker(reason){if(rubyWorker){rubyWorker.terminate();rubyWorker=null}for(const p of rubyPending.values()){clearTimeout(p.timer);p.reject(Error(reason))}rubyPending.clear()}
+function generateRuby(text){
+ if(rubyCache.has(text))return Promise.resolve(rubyCache.get(text));
+ return new Promise((resolve,reject)=>{
+  let worker;try{worker=createRubyWorker()}catch(e){reject(e);return}
+  const id=++rubyRequestId;
+  const timer=setTimeout(()=>stopRubyWorker('読み込みに時間がかかりすぎたため中止しました'),20000);
+  rubyPending.set(id,{timer,resolve:v=>{rubyCache.set(text,v);resolve(v)},reject});
+  worker.postMessage({id,text});
+ });
+}
 function appendRuby(container,raw){const re=/\{([^{}|\n]+)\|([^{}|\n]+)\}/g;let pos=0,m;
  while((m=re.exec(raw))){if(m.index>pos)container.append(document.createTextNode(raw.slice(pos,m.index)));const ruby=document.createElement('ruby');ruby.append(document.createTextNode(m[1]));const rt=document.createElement('rt');rt.textContent=m[2];ruby.append(rt);container.append(ruby);pos=re.lastIndex}
  if(pos<raw.length)container.append(document.createTextNode(raw.slice(pos)));
 }
-function autoAnnotated(text,t){return t.tokenize(text).map(token=>{
- const surface=token.surface_form,reading=token.reading;
- if(!/[一-龯々]/.test(surface)||!reading||reading==='*')return surface;
- return '{'+surface+'|'+hiragana(reading)+'}';
- }).join('')}
 async function refreshRuby(){
  const serial=++renderSerial,key=songKey(selected),lyric=lyricsSaved[key]||'',out=$('lyricsText');out.replaceChildren();
  if(!lyric){out.textContent='歌詞は未登録です。下のリンクで確認して、必要なら登録できます。';$('rubyStatus').textContent='';return}
  if(!rubyEnabled){out.textContent=lyric;$('rubyStatus').textContent='';return}
  const manual=rubySaved[key];if(manual!==undefined){appendRuby(out,manual);$('rubyStatus').textContent='この曲は修正済みの読み方を表示中';return}
  out.textContent=lyric;$('rubyStatus').textContent='ふりがなを生成中…（初回は辞書の読み込みが必要です）';
- try{const t=await loadTokenizer();if(serial!==renderSerial||songKey(selected)!==key||!rubyEnabled)return;appendRuby(out,autoAnnotated(lyric,t));$('rubyStatus').textContent='自動生成した読み方です。誤りは「読み方を修正」から直せます。'}
+ try{const annotated=await generateRuby(lyric);if(serial!==renderSerial||songKey(selected)!==key||!rubyEnabled)return;out.replaceChildren();appendRuby(out,annotated);$('rubyStatus').textContent='自動生成した読み方です。誤りは「読み方を修正」から直せます。'}
  catch(e){if(serial!==renderSerial)return;$('rubyStatus').textContent='自動変換できませんでした。ネット接続を確認するか「読み方を修正」で手動登録してください。'}
 }
 $('rubyToggle').checked=rubyEnabled;
 $('rubyToggle').onchange=e=>{rubyEnabled=e.target.checked;localStorage.setItem('bluebench-v20-ruby-on',rubyEnabled?'1':'0');refreshRuby()};
 $('rubyEdit').onclick=async()=>{const key=songKey(selected),lyric=lyricsSaved[key]||'';if(!lyric){alert('先に歌詞を登録してください');return}const box=$('rubyEditor');box.classList.remove('hidden');$('rubyInput').value=rubySaved[key]??lyric;
- if(rubySaved[key]===undefined){try{const t=await loadTokenizer();if(songKey(selected)===key&&rubySaved[key]===undefined&&$('rubyEditor').classList.contains('hidden')===false)$('rubyInput').value=autoAnnotated(lyric,t)}catch(e){}}
+ if(rubySaved[key]===undefined){try{const annotated=await generateRuby(lyric);if(songKey(selected)===key&&rubySaved[key]===undefined&&$('rubyEditor').classList.contains('hidden')===false)$('rubyInput').value=annotated}catch(e){}}
 };
 $('rubyCancel').onclick=()=>$('rubyEditor').classList.add('hidden');
 $('rubySave').onclick=()=>{const key=songKey(selected),v=$('rubyInput').value.trim();if(!v)return; rubySaved[key]=v;try{localStorage.setItem('bluebench-v20-ruby',JSON.stringify(rubySaved));$('rubyEditor').classList.add('hidden');rubyEnabled=true;$('rubyToggle').checked=true;localStorage.setItem('bluebench-v20-ruby-on','1');refreshRuby()}catch(e){alert('保存できませんでした')}};
